@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home-style.css">
+    <link href="https://blogfonts.com/css/aWQ9MTUxNTEzJnN1Yj01MTMmYz1mJnR0Zj1Gb3JtdWxhMS1XaWRlX3dlYl8wLnR0ZiZuPWZvcm11bGExLWRpc3BsYXktd2lkZS0z/Formula1 Display Wide.ttf" rel="stylesheet" type="text/css"/>
+    <title>MercedesF1</title>
+</head>
+<body>
+
+
+    <audio id="lewis">
+        <source src="sounds/lewis.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="russell">
+        <source src="sounds/russell.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="wolff">
+        <source src="sounds/wolff.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <header>
+        <h1>MERCEDES-BENZ</h1>
+        <p>Our F1 Team</p>
+    </header>
+    <br><br>
+    <center>
+        <div class="box">
+            <p class="card" style="color: #00A19C;">Click the Cards to Listen</p>
+        </div>
+    </center>
+    <br>
+    <div class="grid-main">
+        <div class="grid-1" data-aos="fade-right" onclick="play()">
+            Lewis<br>HAMILTON
+            <br><br><br><br><br><br><br><br><br>
+            <span style="color:#00A19C;">DRIVER</span>
+        </div>
+        <div class="grid-2" data-aos="fade-left" onclick="play2()">
+            George<br>RUSSELL
+            <br><br><br><br><br><br><br><br><br>
+            <span style="color:#00A19C;">DRIVER</span>
+        </div>
+        <div class="grid-4" data-aos="fade-right" onclick="play3()">
+            Toto<br>WOLFF
+            <br><br><br><br><br><br><br><br>
+            <span style="color:#00A19C;">TEAM<br>PRINCIPAL</span>
+        </div>
+    </div>
+
+    <a href="index.html">
+        <footer>
+            <p>Click Here to Revisit</p>
+        </footer>
+    </a>
+
+    <script>
+
+        var allAudios = document.querySelectorAll('audio');
+
+        function stopAllAudio(){
+            allAudios.forEach(function(audio){
+                audio.pause();
+            });
+        }
+
+        function play(){
+            var audio = document.getElementById("lewis");
+            stopAllAudio();
+            audio.play();
+
+
+        }
+
+        function play2(){
+            var audio2 = document.getElementById("russell");
+            stopAllAudio();
+            audio2.play();
+
+        } 
+
+        function play3(){
+            var audio3 = document.getElementById("wolff");
+            stopAllAudio();
+            audio3.play();
+
+        } 
+
+    </script>
+
+</body>
+
+</html>

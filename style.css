@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'F1';
+    src: url('font/Formula1-Wide_web_0.ttf')  format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: F1;
+    color: white;
+    background-color: black;
+    
+}
+
+header{
+    text-align: center;
+    background-color: #00A19C;
+    color: black;
+    padding: 25px;
+}
+
+header h1{
+    margin-bottom: 6px;
+}
+
+
+
+footer{
+    text-align: center;
+    background-color: #00A19C;
+    color: white;
+    padding: 20px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+footer p{
+    animation: animate 1.5s linear infinite;
+}
+
+footer:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #00A19C;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

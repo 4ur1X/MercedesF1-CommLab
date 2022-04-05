@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'F1';
+    src: url('font/Formula1-Wide_web_0.ttf')  format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: F1;
+    color: white;
+    background-color: black;
+    background-image: url('images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    text-align: center;
+    background-color: #00A19C;
+    color: black;
+    padding: 25px;
+}
+
+header h1{
+    margin-bottom: 9px;
+}
+
+header p{
+    color: white;
+}
+
+.grid-main{
+    margin: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 225px;
+    gap: 30px;
+    justify-content: center;
+}
+
+.grid-1{
+    border-radius: 9px;
+    font-size: 15px;
+    padding-left: 6px;
+    background-image: url('images/lewis.jpg');
+    background-size: cover;
+}
+
+.grid-1:hover{
+    border: 6px dashed #00A19C;
+    margin: -6px; 
+}
+
+.grid-2:hover{
+    border: 6px dashed #00A19C;
+    margin: -6px; 
+}
+
+.grid-4:hover{
+    border: 6px dashed #00A19C;
+    margin: -6px; 
+}
+
+.grid-2{
+    background-image: url('images/russell.jpg');
+    border-radius: 9px;
+    font-size: 15px;
+    padding-left: 6px;
+    background-size: cover;
+}
+
+.grid-4{
+    background-image: url('images/wolff.jpg');
+    border-radius: 9px;
+    font-size: 15px;
+    padding-left: 6px;
+    background-size: cover;
+}
+
+div.box{
+    /* border: 6px solid #00A19C; */
+    background-color: white;
+    padding: 0;
+    padding: 10px;
+}
+
+p.card{
+    font-size: 17px;
+    animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+footer{
+    text-align: center;
+    background-color: #00A19C;
+    color: white;
+    padding: 20px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+footer p{
+    animation: animate 1.5s linear infinite;
+}
+
+footer:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #00A19C;
+}

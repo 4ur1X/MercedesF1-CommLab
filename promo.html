@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://blogfonts.com/css/aWQ9MTUxNTEzJnN1Yj01MTMmYz1mJnR0Zj1Gb3JtdWxhMS1XaWRlX3dlYl8wLnR0ZiZuPWZvcm11bGExLWRpc3BsYXktd2lkZS0z/Formula1 Display Wide.ttf" rel="stylesheet" type="text/css"/>
+    <title>MercedesF1</title>
+</head>
+<body style="overflow-y: hidden; margin:0;">
+    <center>
+        <video id="vid" autoplay muted style="width: 100%;">
+            <source src="video/merc-promo.mp4" type="video/mp4">
+        </video>
+        <!-- <audio id="audio">
+            <source src="mercpromo.mp3" type="audio/mpeg">
+        </audio> -->
+        <p style="text-align: center; bottom: 20px;
+        position: fixed;
+        width: 100%; animation: animate 1.5s linear infinite; @keyframes animate {
+            0% {
+                opacity: 0;
+            }
+        
+            50% {
+                opacity: 0.7;
+            }
+        
+            100% {
+                opacity: 0;
+            }
+        }">Spacebar to Mute or Unmute</p>
+    </center>
+
+    <script>
+        video = document.getElementById('vid');
+        video.addEventListener('ended',function() {alert('Thanks for Watching our Latest Launch! Now, Get to Know Our Team!');       
+        window.location.href = 'home.html';})
+
+
+        document.onkeydown = function(event) {
+            switch (event.keyCode) {
+            case 32: // M key
+                video.muted = !video.muted;
+            break;
+            }
+            return false;
+        }
+
+
+    </script>
+
+</body>
+
+
+
+</html>
