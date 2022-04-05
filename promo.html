@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="Tone.js"></script>
     <link href="https://blogfonts.com/css/aWQ9MTUxNTEzJnN1Yj01MTMmYz1mJnR0Zj1Gb3JtdWxhMS1XaWRlX3dlYl8wLnR0ZiZuPWZvcm11bGExLWRpc3BsYXktd2lkZS0z/Formula1 Display Wide.ttf" rel="stylesheet" type="text/css"/>
     <title>MercedesF1</title>
 </head>
-<body style="overflow-y: hidden; margin:0;">
+<body style="overflow-y: hidden; margin:0;" class="click">
     <center>
         <video id="vid" autoplay muted style="width: 100%;">
             <source src="video/merc-promo.mp4" type="video/mp4">
@@ -47,6 +48,12 @@
             }
             return false;
         }
+        
+        const synth = new Tone.Synth().toDestination();
+        var click = document.getElementById("click");
+        document.body.addEventListener('mousedown', function(event){
+            synth.triggerAttackRelease("A3", "6n");
+        });
 
 
     </script>
